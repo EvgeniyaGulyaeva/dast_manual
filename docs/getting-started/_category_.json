@@ -1,0 +1,8 @@
+{
+  "label": "Начало работы",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "тут какой-то вводный текст (или нет)"
+  }
+}
