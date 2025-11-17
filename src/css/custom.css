@@ -36,5 +36,20 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
+.fixed-col-table table {
+  width: 100%;
+}
+
+.fixed-col-table table td:nth-child(2),
+.fixed-col-table table th:nth-child(2) {
+  width: 500px;         
+  max-width: 500px;
+}
+
+.fixed-col-table table td,
+.fixed-col-table table th {
+  white-space: nowrap;  /* чтобы не переносилось */
+}
+
 
 
