@@ -1,0 +1,9 @@
+{
+    "label": "Завершение работы",
+    "position": 11,
+    "link": {
+      "type": "doc",
+      "id": "terminate-session/index"
+    }
+  }
+  
