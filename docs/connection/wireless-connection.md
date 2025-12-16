@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Беспроводное подключение
 
 ## для чего нужно
@@ -14,7 +16,13 @@ sidebar_position: 2
 
 ## что может пойти не так
 не найдено машин поблизости -> что предпринять?
-<img src="/img/Connect-Page-wireless-not-found.png" className="img card" alt="Не найдено машин поблизости"/>
+
+<img
+  src={useBaseUrl('/img/Connect-Page-wireless-not-found.png')}
+  className="img-card"
+  alt="Не найдено машин поблизости"
+/>
+
 
 что произойдет, если в процессе отвалилось соединение? 
 

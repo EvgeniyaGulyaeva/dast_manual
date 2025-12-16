@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Подключение по кабелю
 
@@ -14,13 +15,19 @@ sidebar_position: 1
 ## что нужно делать и/или знать
 на руле жмайте кнопки, воткните провод туда, воткните провод сюда 
 
-<img src="/img/Connect-Page-Tooltip.png" className="img-card" />
+<img
+  src={useBaseUrl('/img/Connect-Page-Tooltip.png')}
+  className="img-card"
+  alt="Процесс подключения"
+/>
 
 на экране увидите прогресс
 
-<img src="/img/Connection-Process.jpg" className="img-card" alt="Процесс подключения"/>
-
-
+<img
+  src={useBaseUrl('/img/Connection-Process.jpg')}
+  className="img-card"
+  alt="Процесс подключения"
+/>
 
 сломался кабель? (или неплотно вставлен в разъем?)
 

@@ -1,6 +1,7 @@
 ---
 title: Подключение к автомобилю
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## подготовка автомобиля к подключению
 
@@ -26,15 +27,22 @@ title: Подключение к автомобилю
 :::note
 если выдаст несколько VIN - выбрать нужный (где его посмотреть? почему Aftersales портал может отдать больше одного VIN при подключении по кабелю?)
 
-что такое "заказ-наряд"?
 
-<img src="/img/Connect-VIN-list.jpg" className="img-card" alt="Выбор из нескольких VIN" />
+<img
+  src={useBaseUrl('/img/Connect-VIN-list.jpg')}
+  className="img-card"
+  alt="Выбор из нескольких VIN"
+/>
 
 :::
 
 если ничего не выдаст - попробовать снова или обратиться в поддержку (почему может быть "не обнаружено автомобилей, доступных для послепродажного обслуживания"? что делать в этом случае?) 
 
-<img src="/img/No-connection.png" className="img-card" alt="Нет автомобилей, доступных для послепродажного обслуживания" />
+<img
+  src={useBaseUrl('/img/No-connection.png')}
+  className="img-card"
+  alt="Нет автомобилей, доступных для послепродажного обслуживания"
+/>
 
 
 # Подключение к автомобилю
@@ -44,7 +52,12 @@ title: Подключение к автомобилю
 - посмотреть по VIN
 
 выберите тип подключения и следуйте инструкциям (+кросс-референсы)
-<img src="/img/Connect-Page-Choose-Type.jpg" className="img-card" alt="Выбор типа подключения"/>
+
+<img
+  src={useBaseUrl('/img/Connect-Page-Choose-Type.jpg')}
+  className="img-card"
+  alt="Выбор типа подключения"
+/>
 
 
 ## что может пойти не так

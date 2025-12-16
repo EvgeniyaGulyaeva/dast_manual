@@ -1,6 +1,7 @@
 --- 
 sidebar_position: 3
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Подключение по VIN
 
@@ -12,7 +13,11 @@ sidebar_position: 3
 ## что нужно делать и/или знать
 ввести VIN (N символов, которые можно найти где-то)
 
-<img src="/img/enter-VIN.png" className="img-card" alt="Ввод VIN"/>
+<img
+  src={useBaseUrl('/img/enter-VIN.png')}
+  className="img-card"
+  alt="Ввод VIN"
+/>
 
 ## что может пойти не так
 ошибки: нет связи с облачным хранилищем, доступ к автомобилю ограничен, неправильный номер (?)

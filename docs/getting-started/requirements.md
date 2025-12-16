@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Требования и меры предосторожности
 
 Доступ к порталу Aftersales
@@ -24,7 +26,12 @@ OBD2+Ethernet cable (информация от EE)
 
 Требование к переходнику для DAST:
 Переходник OBD-II на Ethernet должен соответствовать схеме со стороны автомобиля распиновка ниже:
-<img src="/img/obdii.png" className="img-card" alt="Распиновка коннектора"/>
+<img
+  src={useBaseUrl('/img/obdii.png')}
+  className="img-card"
+  alt="Распиновка коннектора"
+/>
+
 Длина кабеля: 2-10м (поддерживается любая длина)
 Тип входного коннектора: OBD-II
 Тип выходного коннектора: RJ45
