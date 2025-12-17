@@ -2,7 +2,7 @@
     "label": "Диагностика на основе DTC",
     "position": 1,
     "link": {
-      "type": "doc",
-      "id": "diagnostics/index"
+      "type": "generated-index",
+      "description": "работа с DTC"
     }
   }
