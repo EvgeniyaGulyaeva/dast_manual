@@ -1,8 +1,8 @@
 {
-    "label": "Работа с DTC",
+    "label": "Диагностика на основе DTC",
     "position": 1,
     "link": {
-      "type": "generated-index",
-      "description": "работа с DTC"
+      "type": "doc",
+      "id": "diagnostics/index"
     }
   }
