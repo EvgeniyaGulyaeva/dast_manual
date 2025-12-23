@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Комплектация
 
 ## для чего нужно
@@ -13,6 +15,12 @@ sidebar_position: 2
 жмать на кнопку, переключаться между вкладками, смотреть что написано, делать выводы 
 
 что, как и на что влияет? что об этом нужно знать? как это влияет на принятие решений сервисным инженером? 
+
+<img
+  src={useBaseUrl('/img/Vehcile-Inventory-Engine-History.jpg')}
+  className="img-card"
+  alt="Изменения в комплектации"
+/>
 
 ## что может пойти не так
 

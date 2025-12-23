@@ -31,6 +31,14 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   alt="Процесс подключения"
 />
 
+начать работу 
+
+<img
+  src={useBaseUrl('/img/Connection-Success.png')}
+  className="img-card"
+  alt="Подключение успешно"
+/>
+
 # что может пойти не так 
 
 сломался кабель? или неплотно вставлен в разъем?

@@ -22,6 +22,14 @@ comes in handy when ... ?
   alt="Ввод VIN"
 />
 
+какая инфа доступна и для чего она нужна?
+
+<img
+  src={useBaseUrl('/img/About-car-Cloud.jpg')}
+  className="img-card"
+  alt="VIN cloud info"
+/>
+
 ## что может пойти не так
 
 ошибки: нет связи с облачным хранилищем, доступ к автомобилю ограничен, неправильный номер (?)
