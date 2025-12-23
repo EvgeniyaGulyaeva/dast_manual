@@ -54,6 +54,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 - тачка стоит в сервисе, ее VIN нет в DAST? 
 - что еще?
 
+"продолжить с текущим зарядом" и "начать работу" – это не одно и то же?
+
+<img
+  src={useBaseUrl('/img/low-battery.png')}
+  className="img-card"
+  alt="Низкий заряд"
+/>
 
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
