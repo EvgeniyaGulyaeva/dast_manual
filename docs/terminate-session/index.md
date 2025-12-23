@@ -1,9 +1,15 @@
 ---
-title: Завершение работы
+title: Завершение диагностической
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## для завершения работы
 
-- сформировать протокол
-- отправить протокол
-- завершить сессию? 
+- жмать где-то "завершить сессию"?
+- протокол автоматически сформируется и отправится
+
+<img
+  src={useBaseUrl('/img/Session-Finish-Initialization.png')}
+  className="img-card"
+  alt="Завершить сессию"
+/>
