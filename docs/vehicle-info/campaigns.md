@@ -2,7 +2,9 @@
 sidebar_position: 3
 ---
 
-# История сервисных и отзывных кампаний
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+# Сервисные и отзывные кампании
 
 ## для чего нужно
 
@@ -15,6 +17,12 @@ sidebar_position: 3
 если есть активные – нужно что-то предпринять?
 
 что будет, если провалиться в кампанию?
+
+<img
+  src={useBaseUrl('/img/bulletins.png')}
+  className="img-card"
+  alt="Кампании"
+/>
 
 ## что может пойти не так
 
