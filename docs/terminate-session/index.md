@@ -13,3 +13,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   className="img-card"
   alt="Завершить сессию"
 />
+
+<img
+  src={useBaseUrl('/img/HPC.png')}
+  className="img-card"
+  alt="Отправка протокола"
+/>
