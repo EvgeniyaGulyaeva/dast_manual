@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Глоссарий
 <div className="fixed-col-table">
-| Аббревиатура | Расшифровка | Расшифровка| 
+| Аббревиатура | EN | RU | 
 | ------------ | :---------- | ----------|
 | **ACU** | Airbag Control Unit | |
 | **ADCU** | ADAS Control Unit | |
