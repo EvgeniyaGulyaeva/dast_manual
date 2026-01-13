@@ -1,9 +1,0 @@
-{
-    "label": "Информация об автомобиле",
-    "position": 5,
-    "link": {
-      "type": "doc",
-      "id": "vehicle-info/index"
-    }
-  }
-  
