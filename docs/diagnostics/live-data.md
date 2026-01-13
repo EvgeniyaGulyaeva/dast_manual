@@ -5,33 +5,28 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Действительные значения
 
-## для чего нужно 
+## Мониторинг действительных значений
 
-DAST Real-time monitoring (Live data) function is created to support the following actions:
-- View specific parameters values for any ECU/HPC of the Atom Car and how they change in real time when Car is connected to DAST; 
-- Record live data and save locally/ in AAC when Car is connected to DAST;
-- Playback earlier saved records with/without Car connection to DAST.
+Мониторинг действительных значений является ключевым инструментом для глубокой диагностики поведения автомобиля в реальных условиях эксплуатации.
 
-Real-time monitoring (Live data) function should be available with/without Car connection to the Internet.
+Используйте мониторинг действительных значений для:
+- точной диагностики событий автомобиля;
+- поиска и анализа неисправностей, включая интермиттирующие;
+- оценки реакции систем на нагрузку и условия эксплуатации;
+- сопоставления жалоб клиента с фактическими параметрами автомобиля;
+- принятия решений по дальнейшим диагностическим и ремонтным действиям.
 
-Real-time monitoring (Live data) function should be available when Car moves. There should be no additional preconditions that limits the reading parameters values.
+### Выбор параметров для мониторинга
 
-Real-time monitoring (Live data) of ATOM parameter values from the specific vehicle ​​in real time via DAST is for accurate car events diagnostics, effective troubleshooting and preventive maintenance.
+Выберите параметры, относящиеся к жалобе клиента или диагностируемой системе.
 
-It will help to detect hidden faults while driving (accompanied by DTC or not), including intermittent failures, system response to loads and operating conditions.
+Для выбора параметров для мониторинга:
+1. Перейдите в раздел **Действительные значения**, чтобы выбрать параметры для отображения.
+2. Нажмите **Добавить параметр** и выберите параметры. _Доступен поиск по названию ЭБУ и названию параметра?_
 
-Allows to link customers perception of symptoms, assess them linking with real-time data from Car and decide how to resolve the issue.
-
-## мониторинг действительных значений
-### выбрать параметр(ы)
-
-This section is to provide ability for the user to see list of available parameters of ECU/HPC.
-
-To Select/deselect parameters to be displayed in Live data display section.
-
-Parameters and allocation to ECU/HPC are from Ref. data from DiagCore.
-
-Max number of monitored parameters on the page: 4 in both table and graphical view.
+:::info
+Максимальное количество параметров для единовременного мониторинга — 4. 
+:::
 
 <figure className="img-card">
   <img
@@ -41,11 +36,14 @@ Max number of monitored parameters on the page: 4 in both table and graphical vi
   <figcaption>Выбор параметров для мониторинга</figcaption>
 </figure>
 
-### отображение данных мониторинга
+### Отображение данных мониторинга
 
-данные отображаются в виде таблицы со значениями и в виде графиков
+Данные мониторинга отображаются в виде графиков и таблицы, содержащей текущие и предельные значения отслеживаемых параметров. 
 
-(максимум 4 на странице) 
+Используйте графическое представление для:
+- выявления трендов;
+- анализа отклонений;
+- сопоставления параметров и их значений.
 
 <figure className="img-card">
   <img
@@ -55,7 +53,8 @@ Max number of monitored parameters on the page: 4 in both table and graphical vi
   <figcaption>Отображение данных мониторинга</figcaption>
 </figure>
 
-графики можно совмещать
+:::tip
+Для анализа взаимосвязей между параметрами доступно совмещение графиков. 
 
 <figure className="img-card">
   <img
@@ -72,31 +71,42 @@ Max number of monitored parameters on the page: 4 in both table and graphical vi
   />
   <figcaption>Совмещенные графики</figcaption>
 </figure>
+:::
 
-на графиках можно отображать отклонение от предельных значений (см секцию ниже)
 
-### предельные значения
-#### установить / изменить
+### Предельные значения
+
+Настройте предельные значения для выбранных параметров, чтобы отслеживать отклонения от допустимых диапазонов. Отклонения от предельных значений отображаются на графиках мониторинга. 
+
+#### Добавление предельных значений
+
+Чтобы установить предельные значения, нажмите на иконку <img
+  src={useBaseUrl('/img/Threshold-Button.svg')}
+  alt="Запись"
+  style={{ width: '30px', verticalAlign: 'middle', margin: '0 4px' }}
+/> (_у иконки должен быть тултип_) в строке отслеживаемого параметра.
 
 <figure className="img-card">
   <img
     src={useBaseUrl('/img/add-thresholds-control.png')}
     alt="Добавление предельных значений"
   />
-  <figcaption>Добавление предельных значений (жмайте на иконку)</figcaption>
+  <figcaption>Добавление предельных значений</figcaption>
 </figure>
+
+Установите верхнюю и нижнюю границу значений параметра. 
+
+При необходимости включите автозапись и звуковой сигнал при превышении предельных значений. Сохраните изменения.
 
 <figure className="img-card">
   <img
     src={useBaseUrl('/img/add-thresholds-popup.png')}
     alt="Добавление предельных значений"
   />
-  <figcaption>Добавление предельных значений (заполните поля)</figcaption>
+  <figcaption>Добавление предельных значений</figcaption>
 </figure>
 
-#### отклонения
-
-отображаются на графике выбранным цветом 
+Отклонения от предельных значений отображаются на графике в виде линии выбранного цвета.
 
 <figure className="img-card">
   <img
@@ -106,13 +116,15 @@ Max number of monitored parameters on the page: 4 in both table and graphical vi
   <figcaption>Отклонения графика от предельных значений</figcaption>
 </figure>
 
-## запись
+## Запись действительных значений
 
-This section is to provide ability to Start/Stop recording, save/rename records of Live data from Car.
+### Включение записи
 
-### включить запись
+Запустите запись одним из способов:
+- вручную, нажав кнопку **Начать запись**;
+- автоматически, настроив запуск записи при выходе параметров за предельные значения.
 
-можно вручную жмать кнопку Запись или настроить автовключение при отклонении от предельных значений 
+Используйте функцию записи для сохранения данных мониторинга. Во время записи система сохраняет значения всех отображаемых параметров.
 
 <figure className="img-card">
   <img
@@ -122,16 +134,55 @@ This section is to provide ability to Start/Stop recording, save/rename records 
   <figcaption>Запись действительных значений</figcaption>
 </figure>
 
-### просмотреть записи
+:::note
+Вы можете импортировать запись (_в каком формате? откуда?_)
+:::
 
-This section is to provide ability to choose records from local storage, AAC and to Start/Stop playback of previously saved Live data, pause and scroll records. Change visualization during monitoring and playback. 
+### Просмотр записей
 
-жмать Записи - провалиться в запись - жмать плей
+Для просмотра сохраненных записей, нажмите кнопку **Записи**.
 
-можно двигать ползунок
+1. Выберите запись из списка.
+2. Нажмите <img
+  src={useBaseUrl('/img/Play-Button.svg')}
+  alt="Запись"
+  style={{ width: '24px', verticalAlign: 'middle', margin: '0 4px' }}
+/>Play для воспроизведения.
+3. Чтобы открыть график(и), нажмите на иконку <img
+  src={useBaseUrl('/img/Chart-Button.svg')}
+  alt="Запись"
+  style={{ width: '30px', verticalAlign: 'middle', margin: '0 4px' }}
+/> (_у иконки должен быть тултип_) в строке отображаемого параметра.
 
-можно скачать (в каком-то формате)
+Во время воспроизведения:
+- используйте ползунок для перемещения по временной шкале;
+- изменяйте способ визуализации (таблица / график);
+- анализируйте параметры так же, как в режиме реального времени.
 
-### редактировать записи
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/Play-record-Grab.png')}
+    alt="Просмотр записи"
+  />
+  <figcaption>Просмотр записи</figcaption>
+</figure>
 
-только переименовать и удалить
+:::tip
+При необходимости скачайте запись для внешнего анализа или передачи в службу технической поддержки Атом. (_в каком формате?_)
+:::
+
+### Редактирование записей
+
+В разделе записей доступны следующие действия:
+- переименовать запись;
+- удалить запись.
+
+Изменение содержимого записи не предусмотрено.
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/edit-recording.png')}
+    alt="Редактирование записи"
+  />
+  <figcaption>Редактирование записи</figcaption>
+</figure>
