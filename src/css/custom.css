@@ -71,5 +71,14 @@
   white-space: nowrap;  /* чтобы не переносилось */
 }
 
+.img-row {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin: 16px 0;
+}
 
-
+.tabs__item {
+  display: flex;
+  align-items: center;
+}

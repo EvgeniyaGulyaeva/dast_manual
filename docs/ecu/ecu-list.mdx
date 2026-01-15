@@ -1,0 +1,125 @@
+---
+sidebar_position: 1
+---
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Список блоков управления
+
+Раздел **Блоки управления** предназначен для просмотра списка электронных блоков управления автомобиля, оценки их текущего состояния и выполнения базовых диагностических действий, связанных с DTC.
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/ecu-tab.png')}
+    alt="Раздел Блоки управления"
+  />
+  <figcaption>Раздел Блоки управления</figcaption>
+</figure>
+
+## Режимы отображения
+
+(_тут какое-то предложение_):
+
+- Список — табличное представление ЭБУ;
+- Схема — графическое отображение (топология).
+
+<Tabs>
+  <TabItem value="bus" label="Список">
+    <figure className="img-card">
+      <img
+        src={useBaseUrl('/img/ECU-Sidebar.jpg')}
+        alt="Список ЭБУ"
+      />
+      <figcaption>Список ЭБУ</figcaption>
+    </figure>
+  </TabItem>
+
+  <TabItem value="signal" label="Схема">
+    <figure className="img-card">
+      <img
+        src={useBaseUrl('/img/ECU-topology.png')}
+        alt="Топология ЭБУ"
+      />
+      <figcaption>Топология ЭБУ</figcaption>
+    </figure>
+  </TabItem>
+</Tabs>
+
+## Фильтрация по шинам
+
+Под панелью управления расположены фильтры по типу шины:
+- Body
+- Chassis
+- Infotainment
+- Powertrain
+- LIN
+- Internal
+- Ethernet
+
+Используйте фильтры, чтобы отобразить только ЭБУ, относящиеся к выбранной шине.
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/bus-filter.jpg')}
+    alt="Фильтр по шине"
+  />
+  <figcaption>Фильтр по шине</figcaption>
+</figure>
+
+## Таблица ЭБУ
+
+В табличном режиме для каждого ЭБУ отображаются следующие колонки:
+* Код ЭБУ — краткое обозначение блока (например, BCM, BMS, EPS);
+* Название — полное наименование блока (например, Body Control Module);
+* Статус: 
+    + В сети — ЭБУ доступен и отвечает; 
+    + Не в сети — ЭБУ не отвечает; 
+    + Не установлен — ?;
+* Шина — тип шины, к которой относится ЭБУ (Body, Chassis, Powertrain и др.);
+* Версия ПО — установленная версия программного обеспечения;
+* DTC — информация о наличии диагностических кодов:
+    + Считывание не проводилось;
+    + Не обнаружено;
+    + Коды ошибок (после считывания).
+
+## Поиск ЭБУ
+
+В верхней части страницы доступно поле Поиск. Используйте его для быстрого поиска ЭБУ по коду или названию.
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/ECU-search.png')}
+    alt="Поиск ЭБУ"
+  />
+  <figcaption>Поиск ЭБУ</figcaption>
+</figure>
+
+## DTC 
+
+- считать для всех блоков
+- считать для блоков по шине
+- считать для одного блока через сайдбар
+
+отображаются в таблице и на схеме
+отображаются в сайдбаре для каждого блока 
+отображаются на странице блока (референс)
+
+The 'ECU list' page should contain a control that should trigger reading faults for all listed ECU
+
+The 'ECU list' page should contain a control that should trigger cleaning faults for all listed ECU
+
+The 'ECU list' page should contain a side bar that should allow:
+- to read DTC separately for each ECU
+- to clean DTC separately for each ECU
+- to read detail technical info about ECU
+- ECU DTC List Value should have content that displays information of all ECU faults if they exist. It should consist of DTC Code List Items defined for each Fault of the ECU.
+- The 'ECU list' page should allow to get detail info about any DTC on 'DTC list' page
+
+## Возможные проблемы и ограничения
+
+ECU list screen can be displayed after DAST processed information from Diagcore topology from the vehicle;
+
+ECU list screen content depends on the data retrieved from the vehicle after completion of operations on the vehicle side (e.g. ECU/HPC status request, presence of DTC, software versions, etc.); More possible details here: UI specification \ Description by BA.
+
+Amount of information to be displayed on ECU list screen depends on the data retrieved from the vehicle ECU/HPCs and from integrations with other systems;
