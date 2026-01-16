@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Подключение по VIN
+# Просмотр данных автомобиля по VIN
 
 :::note
 comes in handy when ... ?

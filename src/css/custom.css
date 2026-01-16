@@ -82,3 +82,17 @@
   display: flex;
   align-items: center;
 }
+
+.list-figure {
+  margin: 0;
+}
+
+.list-figure img {
+  display: block;
+  max-width: 100%;
+}
+
+.list-figure figcaption {
+  font-size: 0.875rem;
+  color: var(--ifm-color-content-secondary);
+}

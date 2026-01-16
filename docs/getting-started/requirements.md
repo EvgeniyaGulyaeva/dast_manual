@@ -24,7 +24,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
     src={useBaseUrl('/img/obdii.png')}
     alt="Распиновка коннектора"
   />
-  <figcaption>Рис.1 — Распиновка коннектора</figcaption>
+  <figcaption>Распиновка коннектора</figcaption>
 </figure>
 
 :::info
