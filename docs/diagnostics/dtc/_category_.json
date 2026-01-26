@@ -1,8 +1,0 @@
-{
-    "label": "Диагностика на основе DTC",
-    "position": 1,
-    "link": {
-      "type": "doc",
-      "id": "diagnostics/dtc/index"
-    }
-  }
