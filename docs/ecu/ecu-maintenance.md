@@ -6,8 +6,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Обслуживание блоков управления
 
-## замена 
-
 ## обновление ПО
 
 ### со страницы ЭБУ
@@ -91,5 +89,54 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 | Ошибка проверки контрольной суммы файлов. Файлы были повреждены во время передачи или хранения. Используйте оригинальные файлы Flashdriver и Application. | | |
 | Новое ПО не было загружено. Для обновления ПО проведите операцию повторно.| | |
 
+## замена блока
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/ecu-replacement-1.jpg')}
+    alt="Выбор ЭБУ для обновления ПО"
+  />
+  <figcaption>тут какая-то подпись</figcaption>
+</figure>
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/ecu-replacement-2.png')}
+    alt="Выбор ЭБУ для обновления ПО"
+  />
+  <figcaption>тут какая-то подпись</figcaption>
+</figure>
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/ecu-replacement-3.png')}
+    alt="Выбор ЭБУ для обновления ПО"
+  />
+  <figcaption>тут какая-то подпись</figcaption>
+</figure>
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/ecu-replacement-4.png')}
+    alt="Выбор ЭБУ для обновления ПО"
+  />
+  <figcaption>тут какая-то подпись</figcaption>
+</figure>
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/ecu-replacement-5.png')}
+    alt="Выбор ЭБУ для обновления ПО"
+  />
+  <figcaption>тут какая-то подпись</figcaption>
+</figure>
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/ecu-replacement-6.png')}
+    alt="Выбор ЭБУ для обновления ПО"
+  />
+  <figcaption>тут какая-то подпись</figcaption>
+</figure>
 
 ## сервисные операции?
