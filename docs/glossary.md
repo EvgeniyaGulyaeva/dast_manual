@@ -6,8 +6,8 @@ sidebar_position: 2
 <div className="fixed-col-table">
 | Аббревиатура | EN | RU | 
 | ------------ | :---------- | ----------|
-| **ACU** | Airbag Control Unit | |
-| **ADCU** | ADAS Control Unit | |
+| **ACU** | Airbag Control Unit | Блок управления подушками безопасности |
+| **ADCU** | ADAS Control Unit | Блок управления ассистентами водителя |
 | **AGS** | Active Grill Shutter | |
 | **ALM** | Ambient Lighting Module | |
 | **AQS** | Air Quality Sensor | |
@@ -15,68 +15,71 @@ sidebar_position: 2
 | **ARC_R** | All Round Camera Rear | |
 | **ARC_SL** | All Round Camera Left Side | |
 | **ARC_SR** | All Round Camera Right Side | |
-| **AVAS** | Acoustic Vehicle Alarm Unit | |
-| **BCM** | Body Control Module | | 
-| **BLE** | Bluetooth Module | |
-| **BMS** | Battery Management System | |
+| **AVAS** | Acoustic Vehicle Alarm Unit | Блок управления звуковой сигнализации |
+| **BCM** | Body Control Module | Блок управления электрооборудованием кузова | 
+| **BMS** | Battery Management System | Блок управления высоковольтной аккумуляторной батареей |
+| **BPM** | B-plan module | Дополнительный блок управления электрооборудованием кузова |
 | **BS** | Battery Sensor | |
-| **CBM** | Central Bluetooth Module | |
+| **CBM** | Central Bluetooth Module | Центральный модуль Bluetooth |
 | **CCV** | Coolant Control Valve | |
 | **CCU** | Central Control Unit | |
-| **CGW** | Central GateWay | |
+| **CGW** | Central GateWay | Центральный блок управления коммуникацией |
 | **DCC** | Driver Control Camera | | 
-| **DCM** | Door Control Module | |
-| **DIM** | Digital Interior Mirror | |
-| **EVCOM** | Compressor | |
-| **EPS** | Electric Power Steering | |
+| **DCM** | Door Control Module | Блок управления двери |
+| **DIM** | Digital Interior Mirror | Электронное зеркало заднего вида |
+| **EPS** | Electric Power Steering | Электрический усилитель рулевого управления |
+| **ERA** | ERA Glonass | Модуль ЭРА-ГЛОНАСС |
+| **EVCOM** | Compressor | Электрический компрессор системы климат-контроля |
 | **EXV** | Electronic Extension Valve | |
-| **ERA** | ERA Glonass | |
 | **F_USB** | Front USB | |
 | **FRC** | Front Roof Console | |
 | **FRL** | Front Roof Lamp | |
 | **FWA** | Front Wheel Actuator ( SbW system) | |
-| **HWA** | Hand Wheel Actuator ( SbW system) | |
-| **HVAC** | Heating ventilation Air Condition | |
+| **HLL** | Head Lamp Left | Электроника фары левой |
+| **HLR** | Head Lamp Right | Электроника фары правой |
+| **HOD** | Hands off detection | Датчик распознания рук на руле и подогрев рулевого колеса |
+| **HUD** | Head-Up Display | Проекционный дисплей лобового стекла |
+| **HVAC** | Heating ventilation Air Condition | Блок управления подогревом и системой кондиционирования |
 | **HVCH** | High Voltage Coolant Heater | |
-| **HLL** | Head Lamp Left | |
-| **HLR** | Head Lamp Right | |
-| **HUD** | Head-Up Display | |
-| **HOD** | Hands off detection | |
-| **IBS** | Integrated Brake System | |
-| **IVI** | In Vehicle Infotainment | |
-| **IFT** | Infotainment | |
+| **HWA** | Hand Wheel Actuator ( SbW system) | |
+| **IBS** | Integrated Brake System | Блок управления тормозной системы |
 | **IMC** | Internal Mirror Camera | |
+| **IVI** | In Vehicle Infotainment | Информационно-развлекательная система |
 | **LRR** | Long Range Radar | |
+| **MFP_FC** | MultiFunction Display Front Central | Многофункцональный дисплей передний центральный |
+| **MFP_RC** | MultiFunction Display Rear Central | Многофункцональный дисплей задний центральный |
 | **MFP_RR** | MultiFunction Display Rear Right | |
 | **MFP_RL** | MultiFunction Display Rear Left | |
-| **MFP_RC** | MultiFunction Display Rear Central | |
 | **MFP_FR** | MultiFunction Display Front Right | |
 | **MFP_FL** | MultiFunction Display Front Left | |
-| **MFP_FC** | MultiFunction Display Front Central | |
-| **MCU** | Motor Control Unit | |
+| **MCU** | Motor Control Unit | Блок управления тяговым электродвигателем |
 | **MFC** | Main Forward Camera | |
 | **NDT** | NFC Dynamic Tag | |
-| **NFC** | Near-Field Communication | |
+| **NFC** | Near-Field Communication | NFC-антенна |
 | **OBC** | On Board Charger | |
-| **PAT** | Power Adjust Type (Column) | |
-| **POD** | Power On Board | |
+| **PAT** | Power Adjust Type (Column) | Регулировка рулевой колонки |
+| **POD** | Power On Board | Блок управления распределением электрического питания |
+| **PRND** | PRND | Селектор выбора режимов движения |
 | **RLS** | Rain Light Sensor | |
 | **RMC** | Rearview Mirror Camera | |
 | **RSC_L** | Rearward-Looking Side Camera Left | |
 | **RSC_R** | Rearward-Looking Side Camera Right | |
 | **RRL** | Rear Roof Lamp | |
 | **SCM** | Clock Spring Mechanism | |
-| **SCU** | Seat Control Unit | |
+| **SCUL** | Seat Control Unit Left | Блок управления сиденьем водителя|
+| **SCUR** | Seat control unit Right | Блок управления сиденьем пассажира |
 | **SDS** | Side Door Sensor | |
 | **SFI** | Safety Island | |
 | **SGT** | Sub-Gigahertz Transceiver | |
-| **SGW** | Security GateWay | |
-| **SWP** | Steering Wheel Panel | |
+| **SGW** | Security GateWay | Блок управления системой безопасности коммуникации электромобиля |
+| **Switches** | Steering Wheel Switch | Подрулевые переключатели |
+| **SWP** | Steering Wheel Panel | Дисплей на рулевом колесе |
 | **SRR_FL** | Short Range Radar Front Left | |
 | **SRR_FR** | Short Range Radar Front Right | |
 | **SRR_RL** | Short Range Radar Rear Left | |
 | **SRR_RR** | Short Range Radar Rear Right | |
-| **TCU** | Thermal Control Unit | |
+| **T-BOX** | Telematic Box | Блок управления телематикой |
+| **TCU** | Thermal Control Unit | Блок управления системой терморегулирования |
 | **USS_FCL** | Ultra Sonic Sensor Front Center Left | |
 | **USS_FCR** | Ultra Sonic Sensor Front Center Right | |
 | **USS_FOL** | Ultra Sonic Sensor Front Outer Left | |
@@ -89,8 +92,9 @@ sidebar_position: 2
 | **USS_ROR** | Ultra Sonic Sensor Rear Outer Right | |
 | **USS_RSL** | Ultra Sonic Sensor Rear Side Left | |
 | **USS_RSR** | Ultra Sonic Sensor Rear Side Right | |
-| **VCU** | Vehicle Control Unit | |
-| **WCBS** | Wireless Charger Base Station | |
+| **VCU** | Vehicle Control Unit | Блок управления электромобилем |
+| **WCBS1** | Wireless Charger LH | Беспроводное зарядное устройство слева |
+| **WCBS2** | Wireless Charger LR | Беспроводное зарядное устройство справа |
 | **WL** | Window Lifter | |
 | **WS** | Window Lifter Switches | |
 </div>
