@@ -2,6 +2,8 @@
 sidebar_position: 9
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Сервисные операции
 
 Раздел **Сервисные операции** предназначен для работы с операциями диагностики и обслуживания компонентов автомобиля Атом.
@@ -18,42 +20,90 @@ sidebar_position: 9
 Доступ к отдельным операциям возможен также через страницы конкретных ЭБУ, однако список сервисных операций является основной точкой навигации.
 :::
 
+## Выбор сервисной операции
 
+дерево конструкционных групп 
 
-What?
-
-DAST Service Operations List Screen is a sort of interface where the user can view and interact with list of available Service operations related to the Atom car.
-
-What for?
-
-DAST Service Operations List Screen is created to be a central screen to navigate through and see list of all Service Operations, their statuses within current DAST diagnostic session. It should be designed to provide quick and intuitive access to required Service operations.
-
-Without DAST Service Operations List Screen it will be impossible to see list of Service Operations in one place. Alternative way to reach required Service оperation- via ECU menu (аllocation of Service operations to ECU/HPC should be additionally studied).
-
-DAST Service Operations List Screen must provide the possibility to launch any Service operation from the List. Navigation (using groups) and search by name should also be provided to the user.
-
-During diagnostic session status of Service operation completion should be available for each operation. 
-
-Data description
 List of Construction groups / Sub-groups
 Often it is necessary to see the entire list of available Service operations related to the Construction group / Sub-group (Конструкционная группа).
 
+It is useful for providing logical connection of Service operation with the corresponding sections of the Repair Manual, the Labor time catalogue, the Spare Parts Catalog, etc. <mark>это удобно для нас или для пользователя?</mark>
 
+<mark>что такое пресеты?</mark>
 
-Such division is required by AS and organized at the moment in excel file Конструкционные группы_V2.xlsx
+:::tip
+Чтобы быстро найти нужную операцию, начните вводить название операции в поле поиска. Поиск выполняется по всему списку сервисных операций, независимо от конструкционной группы.
+:::
 
-It is useful for providing logical connection of Service operation with the corresponding sections of the Repair Manual, the Labor time catalogue, the Spare Parts Catalog, etc.
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/service-operations-select.png')}
+    alt="Выбор сервисной операции"
+  />
+  <figcaption>Выберите сервисную операцию из списка</figcaption>
+</figure>
 
-AS Diagnostics team is responsible for Construction groups / Sub-groups naming (RU, EN), naming of Service operations (EN+RU) and linking Service operations both to Construction groups / Sub-groups and to an ECU/HPC.
+<mark>как пользователь принимает решение, какую операцию ему выбрать?</mark> 
 
-List of service operations
-The AS Diagnostics team will provide names of service operations (RU, EN)
+<mark>нельзя выполнять две операции одновременно?</mark>
 
-Service operations in list should be named as provided. Names of Service operations should be displayed in the language corresponding to DAST interface.
-
-For Service operations within diagnostic session following statuses should be organized (description in table below):
-
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/service-operation-not-allowed.png')}
+    alt=""
+  />
+  <figcaption></figcaption>
+</figure>
  
+## Проведение сервисных операций
+
+Каждая сервисная операция представляет собой подробное пошаговое описание последовательности действий, необходимых для ее выполнения. 
+
+После выбора сервисной операции нажмите кнопку **Начать операцию**. Ознакомьтесь с ее описанием, убедитесь, что в вашем распоряжении есть все необходимые инструменты и вы обладаете достаточной квалификацией для выполнения этой операции. 
+
+:::danger
+Выполнение сервисных операций требует соблюдения особых мер предосторожности. Неукоснительно следуйте инструкциям по подготовке и проведению сервисной операции, представленным в ее пошаговом описании.
+:::
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/service-operation-start.png')}
+    alt="Запуск сервисной операции"
+  />
+  <figcaption>Запуск сервисной операции</figcaption>
+</figure>
+
+Выполняйте шаги операции, строго следуя указаниям на экране. По завершении инструкций для каждого шага нажмите **Следующий шаг**, чтобы продолжить выполнение операции.
+
+:::info
+Некоторые сервисные операции и их шаги могут потребовать предварительной подготовки автомобиля или его систем, специальной подготовки рабочего пространства, <mark>еще чего-нибудь</mark> и других дополнительных действий.
+:::
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/service-operation-in-progress.png')}
+    alt="Выполнение сервисной операции"
+  />
+  <figcaption>Выполнение сервисной операции</figcaption>
+</figure>
+
+После выполнения всех шагов и проведения заключительной проверки нажмите **Завершить операцию**. 
+
+<mark>что произойдет, если нажать Отменить операцию? во все ли моменты можно отменить операцию? какие меры предосторожности?</mark>
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/service-operation-finish.png')}
+    alt="Завершение сервисной операции"
+  />
+  <figcaption>Завершение сервисной операции</figcaption>
+</figure>
+
+## Статусы сервисных операций
+
+В рамках одной диагностической сессии каждая сервисная операция имеет статус выполнения. <mark>что это дает пользователю?</mark>
+
+<mark>для чего это нужно?</mark>
 
 | Статус сервисной операции | Описание | 
 |:----|:-----|
@@ -63,32 +113,4 @@ For Service operations within diagnostic session following statuses should be or
 | Успешно | Сервисная операция завершена успешно |
 | Не успешно | Сервисная операция завершена с ошибкой |
 
-Search
-The search should work on the entire list of available Service operations.
-
-Should show the list of matches when entering characters (from 2nd without pressing Enter).
-
-Link to technical support
-Link is to be provided by AS IT. Additional study is required to provide details of technical support process.
-
-After user opens the tab containing service operation, the system should show him the list of all service operations.
-
-For each operation shown to the user, the system should display its status. 
-
-The page should provide the user with the ability to search among the listed Service operations.
-
-## Список/Выбор сервисной операции
-
-на основании чего инженер выбирает операции?
-
-что для этого нужно знать?
-
-одна операция по диагностике/обслуживанию = одна сервисная операция в UI?
-
-## Проведение сервисных операций
-
-пошаговые инструкции
-
-некоторые шаги или операции требуют квалификации 
-
-некоторые требуют особых мер предосторожности 
+## отчеты / протоколы?
