@@ -71,6 +71,9 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+         googleAnalytics: {
+        trackingID: 'G-Z8JDE6SWPK'
+         }
       }),
     ],
   ],
@@ -142,7 +145,7 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
-      },
+      }
     }),
 };
 
