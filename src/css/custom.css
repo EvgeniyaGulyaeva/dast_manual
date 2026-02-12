@@ -96,3 +96,7 @@
   font-size: 0.875rem;
   color: var(--ifm-color-content-secondary);
 }
+
+.hidden {
+display: none !important;
+}

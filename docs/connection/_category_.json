@@ -1,8 +1,10 @@
 {
     "label": "Подключение к автомобилю",
     "position": 4,
+    "className": "hidden",
     "link": {
       "type": "doc",
       "id": "connection/index"
+      
     }
   }
