@@ -4,15 +4,19 @@ sidebar_position: 2
 
 # Глоссарий
 
-## термины внутри DAST 
+## Глоссарий DAST
 
-...
+- **DTC (Diagnostic Trouble Code, Диагностический код неисправности)** — В автомобильной промышленности коды, предписанные стандартами SAE, помогают отслеживать проблемы в автомобиле, обнаруженные его бортовым компьютером.
+- **Стоп-кадр (Freeze Frame, Параметры на момент события)** — Snapshot of relevant sensor and vehicle information at the time a diagnostic trouble code (DTC) is triggered. A Freeze Frame is a snapshot of parameter values recorded at the time a diagnostic trouble code (DTC) was captured. Note: non-volatile PIDs are not supported in freeze frames. If a freeze frame is defined by the application to contain a non-volatile PID, this PID is ignored by the PFF feature when capturing or accessing the freeze frame data. The main limitation of freeze frame is it captures only when the code triggered and not the events that occurred before or after. Also, freeze frame data is limited to standardized codes and there is typically never freeze frame information for body or chassis codes.
+- **Действительные значения (Live data, Диагностические данные в реальном времени)** — Значения диагностических параметров, получаемых в режиме реального времени.
+- **ЭБУ (ECU, Электронный блок управления)** — Device embedded in automotive electronics that controls one or more electrical systems or subsystems.
+- TBD
 
-## системы автомобиля
+## Системы и блоки автомобиля
 
 <div className="fixed-col-table">
 | Аббревиатура | EN | RU | 
-| ------------ | :---------- | ----------|
+| ------------ | :---------- | :----------|
 | **ACU** | Airbag Control Unit | Блок управления подушками безопасности |
 | **ADCU** | ADAS Control Unit | Блок управления ассистентами водителя |
 | **AGS** | Active Grill Shutter | |
