@@ -41,7 +41,7 @@
 
   /* чтобы карточка подстраивалась под картинку */
   width: fit-content;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .img-card img {
