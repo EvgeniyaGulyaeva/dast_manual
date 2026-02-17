@@ -17,3 +17,19 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 4. скачать Агент и потом жмать Запустить DAST или сразу жмать Запустить DAST, если Агент уже установлен
 5. в Агенте запустится DAST
 6. и покажет список автомобилей?
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/Agent-Download.png')}
+    alt="Скачайте и установите DAST Agent"
+  />
+  <figcaption>Скачайте и установите DAST Agent</figcaption>
+</figure>
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/Agent-Download.png')}
+    alt="После установки DAST Agent вы можете запустить DAST"
+  />
+  <figcaption>После установки DAST Agent вы можете запустить DAST</figcaption>
+</figure>
