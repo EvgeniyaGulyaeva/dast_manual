@@ -1,6 +1,7 @@
 {
     "label": "Работа с блоками управления",
     "position": 8,
+     "className": "hidden",
     "link": {
       "type": "generated-index"
     }
