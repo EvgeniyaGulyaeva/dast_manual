@@ -4,7 +4,56 @@ sidebar_position: 3
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Диагностика блока управления
+# Диагностика блоков управления
+
+## Список блоков управления
+
+Раздел **Блоки управления** предназначен для просмотра списка электронных блоков управления автомобиля, оценки их текущего состояния и выполнения базовых диагностических действий, связанных с DTC.
+
+<figure className="img-card">
+  <img
+    src={useBaseUrl('/img/ecu-tab.png')}
+    alt="Раздел Блоки управления"
+  />
+  <figcaption>Раздел Блоки управления</figcaption>
+</figure>
+
+
+Для каждого ЭБУ в списке отображаются следующие данные:
+* Код ЭБУ — краткое обозначение блока (например, BCM, BMS, EPS);
+* Название — полное наименование блока (например, Body Control Module);
+* Статус: 
+    + В сети — ЭБУ доступен и отвечает; 
+    + Не в сети — ЭБУ не отвечает; 
+    + Не установлен — <mark>отсутствует в текущей комплектации?</mark>;
+* Шина — тип шины, к которой относится ЭБУ (Body, Chassis, Powertrain, Infotainment, LIN, Internal, Ethernet);
+* Версия ПО — установленная версия программного обеспечения;
+* DTC — информация о наличии диагностических кодов:
+    + Считывание не проводилось;
+    + Не обнаружено;
+    + Коды ошибок (после считывания).
+
+## Считывание DTC 
+
+- считать для всех блоков
+- считать для одного блока через сайдбар
+
+отображаются в сайдбаре для каждого блока 
+
+отображаются на странице блока (референс)
+
+The 'ECU list' page should contain a control that should trigger reading faults for all listed ECU
+
+The 'ECU list' page should contain a control that should trigger cleaning faults for all listed ECU
+
+The 'ECU list' page should contain a side bar that should allow:
+- to read DTC separately for each ECU
+- to clean DTC separately for each ECU
+- to read detail technical info about ECU
+- ECU DTC List Value should have content that displays information of all ECU faults if they exist. It should consist of DTC Code List Items defined for each Fault of the ECU.
+- The 'ECU list' page should allow to get detail info about any DTC on 'DTC list' page
+
+## ECU page
 
 Страница блока управления  — это основная рабочая страница выбранного электронного блока управления. Используйте её, чтобы в одном месте получить всю информацию о блоке и выполнить доступные диагностические действия.
 
