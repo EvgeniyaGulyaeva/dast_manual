@@ -23,10 +23,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 1. Перейдите в раздел **Действительные значения**.
 2. Нажмите **Добавить параметр** и выберите параметры для мониторинга действительных значений. Доступен поиск по названию параметра.
 
-:::info
-Максимальное количество параметров для единовременного мониторинга — 4. 
-:::
-
 <figure className="img-card">
   <img
     src={useBaseUrl('/img/Monitoring-Add-Data-Parameter.png')}
@@ -51,26 +47,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   />
   <figcaption>Отображение данных мониторинга</figcaption>
 </figure>
-
-:::tip
-Для анализа взаимосвязей между параметрами доступно совмещение графиков. 
-
-<figure className="img-card">
-  <img
-    src={useBaseUrl('/img/chart-merge-control.jpg')}
-    alt="Совмещение графиков"
-  />
-  <figcaption>Совмещение графиков</figcaption>
-</figure>
-
-<figure className="img-card">
-  <img
-    src={useBaseUrl('/img/merged-charts.jpg')}
-    alt="Совмещенные графики"
-  />
-  <figcaption>Совмещенные графики</figcaption>
-</figure>
-:::
 
 
 ### Предельные значения
