@@ -6,6 +6,10 @@ import Admonition from '@theme/Admonition';
 
 # Подключение к автомобилю
 
+:::warning
+будущее туманно
+:::
+
 :::info
 Для подключения автомобиля необходим кабель Ethernet-OBD-II (см. раздел [Требования и меры предосторожности](/docs/getting-started/requirements.md)).
 :::

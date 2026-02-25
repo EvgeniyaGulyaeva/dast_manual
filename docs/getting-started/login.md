@@ -5,6 +5,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Авторизация и доступ
 
+:::warning
+будущее туманно
+:::
+
 Для работы с системой DAST пользователю требуется действующая учетная запись и доступ к порталу Atom Aftersales.
 
 :::info
