@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: "Системные требования, меры предосторожности, установка и подготовка к работе с DAST"
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

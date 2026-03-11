@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: "Порядок получения доступа и авторизации в системах послепродажного обслуживания и диагностики автомобилей Атом"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
