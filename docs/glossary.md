@@ -6,14 +6,20 @@ sidebar_position: 2
 
 ## Глоссарий DAST
 
-- **DAST (АТОМ Диагностический инструмент)** — 
-- **DTC (Diagnostic Trouble Code, Диагностический код неисправности)** — коды, предписанные стандартами SAE, помогающие отслеживать проблемы в автомобиле, обнаруженные его бортовым компьютером.
-- **Стоп-кадр (Freeze Frame, Параметры на момент события)** — Snapshot of relevant sensor and vehicle information at the time a diagnostic trouble code (DTC) is triggered. A Freeze Frame is a snapshot of parameter values recorded at the time a diagnostic trouble code (DTC) was captured. Note: non-volatile PIDs are not supported in freeze frames. If a freeze frame is defined by the application to contain a non-volatile PID, this PID is ignored by the PFF feature when capturing or accessing the freeze frame data. The main limitation of freeze frame is it captures only when the code triggered and not the events that occurred before or after. Also, freeze frame data is limited to standardized codes and there is typically never freeze frame information for body or chassis codes.
 - **Действительные значения (Live data, Диагностические данные в реальном времени)** — Значения диагностических параметров, получаемых в режиме реального времени.
+- **Диагностическая сессия** — 
+- **Диагностический код неисправности (DTC, Diagnostic Trouble Code)** — коды, предписанные стандартами SAE, помогающие отслеживать проблемы в автомобиле, обнаруженные его бортовым компьютером.
+- **Исполнительный механизм** – 
+- **Параметры на момент события (Стоп-кадр, Freeze Frame)** — Snapshot of relevant sensor and vehicle information at the time a diagnostic trouble code (DTC) is triggered. A Freeze Frame is a snapshot of parameter values recorded at the time a diagnostic trouble code (DTC) was captured. Note: non-volatile PIDs are not supported in freeze frames. If a freeze frame is defined by the application to contain a non-volatile PID, this PID is ignored by the PFF feature when capturing or accessing the freeze frame data. The main limitation of freeze frame is it captures only when the code triggered and not the events that occurred before or after. Also, freeze frame data is limited to standardized codes and there is typically never freeze frame information for body or chassis codes.
+- **Портал послепродажного обслуживания** — 
+- **Протокол диагностической сессии** — 
+- **Сервисная операция** — 
+- **Тест** — 
 - **ЭБУ (ECU, Электронный блок управления)** — Device embedded in automotive electronics that controls one or more electrical systems or subsystems.
+- **VIN** — 
 - TBD
 
-## Системы и блоки автомобиля
+## Системы и блоки управления автомобиля
 
 <div className="fixed-col-table">
 | Аббревиатура | EN | RU | 
