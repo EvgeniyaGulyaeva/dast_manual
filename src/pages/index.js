@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -14,8 +15,8 @@ function HomepageHeader() {
       className={clsx('hero', styles.heroBanner)}
       style={{
         background:
-          'linear-gradient(135deg, #001A33 0%, #00498E 40%, #3CA1FF 100%)',
-        color: '#EFF7FF',
+          'linear-gradient(135deg, #183038 0%, #24515B 48%, #69D6CC 100%)',
+    color: '#F4FCFC',
       }}>
       <div className="container">
         <Heading as="h1" className="hero__title">
@@ -29,12 +30,12 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             style={{
-              backgroundColor: '#3CA1FF',
-              borderColor: '#3CA1FF',
-              color: '#001A33',
+             backgroundColor: '#A9ECE5',
+             borderColor: '#A9ECE5',
+             color: '#213B43',
             }}
             to="/docs/intro">
-            Перейти к руководству по DAST
+            Перейти к руководству DAST
           </Link>
         </div>
       </div>
@@ -46,7 +47,7 @@ function FeaturesSection() {
   return (
     <section
       className={styles.featuresSection}
-      style={{backgroundColor: '#EFF7FF', padding: '4rem 0'}}>
+      style={{backgroundColor: '#EEF8F8', padding: '4rem 0'}}>
       <div className="container">
         <div className="row">
           {/* Карточка 1 */}
@@ -56,18 +57,18 @@ function FeaturesSection() {
               style={{
                 height: '100%',
                 border: 'none',
-                backgroundColor: '#DBEEFF',
+                backgroundColor: '#E8F7F5',
               }}>
               <div className="card__image" style={{textAlign: 'center'}}>
                 {/* Плейсхолдер для картинки */}
                 <img
-                  src="/img/device-desktop-analytics.svg"
+                  src={useBaseUrl('/img/device-desktop-analytics.svg')}
                   alt="Подключение DAST к автомобилю"
-                  style={{maxWidth: '160px', marginTop: '1.5rem'}}
+                  style={{width: '160px', marginTop: '1.5rem'}}
                 />
               </div>
               <div className="card__body">
-                <h3 style={{color: '#001A33'}}>Диагностика автомобиля</h3>
+                <h3 style={{color: '#18353A'}}>Диагностика автомобиля</h3>
                 <p>
                   DAST позволяет подключаться к автомобилю по Ethernet и осуществлять полный цикл диагностических процедур: 
                   считывать диагностические коды неисправностей (DTC), отслеживать действительные значения
@@ -85,18 +86,18 @@ function FeaturesSection() {
               style={{
                 height: '100%',
                 border: 'none',
-                backgroundColor: '#BFE0FF',
+                backgroundColor: '#E2F4F2',
               }}>
               <div className="card__image" style={{textAlign: 'center'}}>
                 {/* Плейсхолдер для картинки */}
                 <img
-                  src="/img/cloud-computing.svg"
+                  src={useBaseUrl('/img/cloud-computing.svg')}
                   alt="Интеграция с Atom Automotive Cloud"
-                  style={{maxWidth: '160px', marginTop: '1.5rem'}}
+                  style={{width: '160px', marginTop: '1.5rem'}}
                 />
               </div>
               <div className="card__body">
-                <h3 style={{color: '#001A33'}}>Интеграция с облачными сервисами Атом</h3>
+                <h3 style={{color: '#18353A'}}>Интеграция с облачными сервисами Атом</h3>
                 <p>
                   Инструмент получает информацию об автомобиле и истории его обслуживания из облачных сервисов Атом и
                   передает в облако диагностические протоколы и сведения об
@@ -114,18 +115,18 @@ function FeaturesSection() {
               style={{
                 height: '100%',
                 border: 'none',
-                backgroundColor: '#9BCFFF',
+                backgroundColor: '#DCF1EF',
               }}>
               <div className="card__image" style={{textAlign: 'center'}}>
                 {/* Плейсхолдер для картинки */}
                 <img
-                  src="/img/book-upload.svg"
+                  src={useBaseUrl('/img/book-upload.svg')}
                   alt="Послепродажное обслуживание и документация"
-                  style={{maxWidth: '160px', marginTop: '1.5rem'}}
+                  style={{width: '160px', marginTop: '1.5rem'}}
                 />
               </div>
               <div className="card__body">
-                <h3 style={{color: '#001A33'}}>Поддержка сервисного инженера</h3>
+                <h3 style={{color: '#18353A'}}>Поддержка сервисного инженера</h3>
                 <p>
                   DAST предлагает бользователю быстрые ссылки на гарантийный и сервисный порталы,
                   каталог запасных частей и техническую документацию, а также
@@ -144,10 +145,10 @@ function FeaturesSection() {
               style={{
                 padding: '2rem',
                 borderRadius: '12px',
-                backgroundColor: '#DBEEFF',
-                border: '1px solid #BFE0FF',
+                backgroundColor: '#EDF8F7',
+                border: '1px solid #CFE6E3',
               }}>
-              <h2 style={{color: '#00264A', marginBottom: '0.75rem'}}>
+              <h2 style={{color: '#15444B', marginBottom: '0.75rem'}}>
                 
               </h2>
               <p>
