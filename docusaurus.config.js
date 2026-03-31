@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'DAST User Manual',
-  tagline: 'DAST User Manual',
+  title: 'АТОМ ДИС',
+  tagline: 'АТОМ ДИС',
   favicon: 'img/atom-favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -87,7 +87,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'DAST User Manual',
+        title: 'АТОМ ДИС',
         logo: {
           alt: 'Atom Logo',
           src: 'img/logo-atom.png',
@@ -97,7 +97,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Инструкция пользователя',
+            label: 'Руководство пользователя',
           },
           { href: 'https://example.com/',
             label: 'Техническая документация',
@@ -105,7 +105,7 @@ const config = {
           },
           {
             href: 'https://dast-ui-cdc.aftersales-front.dev-default.int.e-kama.com/connection',
-            label: 'DAST',
+            label: 'АТОМ ДИС',
             position: 'right',
           },
         ],

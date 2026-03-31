@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 
 # Список блоков управления
 
-Раздел **Блоки управления** предназначен для просмотра списка электронных блоков управления автомобиля, оценки их текущего состояния и выполнения базовых диагностических действий, связанных с DTC.
+Раздел **Блоки управления** предназначен для просмотра списка электронных блоков управления автомобиля, оценки их текущего состояния и выполнения базовых диагностических действий, связанных с ДКС.
 
 <figure className="img-card">
   <img
@@ -27,12 +27,12 @@ import TabItem from '@theme/TabItem';
     + Не установлен — <mark>отсутствует в текущей комплектации?</mark>;
 * Шина — тип шины, к которой относится ЭБУ (Body, Chassis, Powertrain, Infotainment, LIN, Internal, Ethernet);
 * Версия ПО — установленная версия программного обеспечения;
-* DTC — информация о наличии диагностических кодов:
+* ДКС — информация о наличии диагностических кодов событий:
     + Считывание не проводилось;
     + Не обнаружено;
-    + Коды ошибок (после считывания).
+    + Коды событий (после считывания).
 
-## Считывание DTC 
+## Считывание ДКС 
 
 - считать для всех блоков
 - считать для одного блока через сайдбар
@@ -46,16 +46,16 @@ The 'ECU list' page should contain a control that should trigger reading faults 
 The 'ECU list' page should contain a control that should trigger cleaning faults for all listed ECU
 
 The 'ECU list' page should contain a side bar that should allow:
-- to read DTC separately for each ECU
-- to clean DTC separately for each ECU
+- to read ДКС separately for each ECU
+- to clean ДКС separately for each ECU
 - to read detail technical info about ECU
-- ECU DTC List Value should have content that displays information of all ECU faults if they exist. It should consist of DTC Code List Items defined for each Fault of the ECU.
-- The 'ECU list' page should allow to get detail info about any DTC on 'DTC list' page
+- ECU ДКС List Value should have content that displays information of all ECU faults if they exist. It should consist of ДКС Code List Items defined for each Fault of the ECU.
+- The 'ECU list' page should allow to get detail info about any ДКС on 'ДКС list' page
 
 ## Возможные проблемы и ограничения
 
 ECU list screen can be displayed after DAST processed information from Diagcore topology from the vehicle;
 
-ECU list screen content depends on the data retrieved from the vehicle after completion of operations on the vehicle side (e.g. ECU/HPC status request, presence of DTC, software versions, etc.); More possible details here: UI specification \ Description by BA.
+ECU list screen content depends on the data retrieved from the vehicle after completion of operations on the vehicle side (e.g. ECU/HPC status request, presence of ДКС, software versions, etc.); More possible details here: UI specification \ Description by BA.
 
 Amount of information to be displayed on ECU list screen depends on the data retrieved from the vehicle ECU/HPCs and from integrations with other systems;
