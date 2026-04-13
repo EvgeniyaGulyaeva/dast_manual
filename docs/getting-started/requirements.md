@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-description: "Системные требования, меры предосторожности, установка и подготовка к работе с **АТОМ ДИС**"
+description: "Системные требования и меры предосторожности"
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
