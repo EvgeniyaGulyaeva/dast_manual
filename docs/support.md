@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 11
 description: "Рекомендации по подготовке обращений в службу поддержки Атом"
 ---
 
