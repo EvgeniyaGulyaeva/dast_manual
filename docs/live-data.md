@@ -25,7 +25,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/Monitoring-Add-Data-Parameter.png')}
+    src={useBaseUrl('/img/Monitoring-Expand-List.png')}
     alt="Выбор параметров для мониторинга"
   />
   <figcaption>Выбор параметров для мониторинга</figcaption>
@@ -42,7 +42,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/Monitoring-Data-Chart.png')}
+    src={useBaseUrl('/img/live-data-chart.png')}
     alt="Отображение данных мониторинга"
   />
   <figcaption>Отображение данных мониторинга</figcaption>
@@ -57,11 +57,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   src={useBaseUrl('/img/Threshold-Button.svg')}
   alt="Запись"
   style={{ width: '30px', verticalAlign: 'middle', margin: '0 4px' }}
-/> (<mark>_у иконки должен быть тултип_</mark>) в строке отслеживаемого параметра.
+/> (*Редактировать*) в строке отслеживаемого параметра.
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/add-thresholds-control.png')}
+    src={useBaseUrl('/img/live-data-threshold.png')}
     alt="Добавление предельных значений"
   />
   <figcaption>Добавление предельных значений</figcaption>
@@ -71,21 +71,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/add-thresholds-popup.png')}
+    src={useBaseUrl('/img/live-data-threshold-window.png')}
     alt="Добавление предельных значений"
   />
   <figcaption>Добавление предельных значений</figcaption>
 </figure>
 
+:::note
 Отклонения от предельных значений отображаются на графике в виде линии выбранного цвета.
-
-<figure className="img-card">
-  <img
-    src={useBaseUrl('/img/thresholds-chart.png')}
-    alt="Отклонения графика от предельных значений"
-  />
-  <figcaption>Отклонения графика от предельных значений</figcaption>
-</figure>
+:::
 
 ## Запись действительных значений
 
@@ -103,7 +97,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/live-data-recording-in-progress.png')}
+    src={useBaseUrl('/img/2-second.png')}
     alt="Запись действительных значений"
   />
   <figcaption>Запись действительных значений</figcaption>
@@ -118,12 +112,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   src={useBaseUrl('/img/Play-Button.svg')}
   alt="Запись"
   style={{ width: '24px', verticalAlign: 'middle', margin: '0 4px' }}
-/>(Play) для воспроизведения.
+/>(*Воспроизвести*) для воспроизведения.
 3. Чтобы открыть графики, нажмите на иконку <img
   src={useBaseUrl('/img/Chart-Button.svg')}
   alt="Запись"
   style={{ width: '30px', verticalAlign: 'middle', margin: '0 4px' }}
-/>(_у иконки должен быть тултип_) в строке отображаемого параметра.
+/>(*График*) в строке отображаемого параметра.
 
 Во время воспроизведения:
 - используйте ползунок для перемещения по временной шкале;
@@ -132,7 +126,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/Play-record-Grab.png')}
+    src={useBaseUrl('/img/Play-record-overlap.png')}
     alt="Просмотр записи"
   />
   <figcaption>Просмотр записи</figcaption>
@@ -148,7 +142,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/edit-recording.png')}
+    src={useBaseUrl('/img/edit-live-data-recording.png')}
     alt="Редактирование записи"
   />
   <figcaption>Редактирование записи</figcaption>

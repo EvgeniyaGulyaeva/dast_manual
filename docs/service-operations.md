@@ -25,7 +25,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/service-operations-select.png')}
+    src={useBaseUrl('/img/service-operations-agent.png')}
     alt="Выбор сервисной операции"
   />
   <figcaption>Выберите сервисную операцию из списка</figcaption>
@@ -34,16 +34,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 :::warning
 Одновременное выполнение нескольких сервисных операций невозможно. Перед запуском новой операции завершите или отмените текущую.
 
-также невозможно завершение сессии
+Завершение диагностической сессии также невозможно при наличии незавершенных сервисных операций.
 :::
-
-<figure className="img-card">
-  <img
-    src={useBaseUrl('/img/service-operation-not-allowed.png')}
-    alt=""
-  />
-  <figcaption></figcaption>
-</figure>
  
 ## Выполнение сервисных операций
 
@@ -59,11 +51,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/service-operation-start.png')}
+    src={useBaseUrl('/img/start-operation-agent.png')}
     alt="Запуск сервисной операции"
   />
   <figcaption>Запуск сервисной операции</figcaption>
 </figure>
+
+
 
 4. Выполняйте этапы операции, строго следуя указаниям на экране. 
 5. По завершении каждого этапа нажмите **Следующий шаг**, чтобы продолжить выполнение операции.
@@ -74,7 +68,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/service-operation-in-progress.png')}
+    src={useBaseUrl('/img/next-step.png')}
     alt="Выполнение сервисной операции"
   />
   <figcaption>Выполнение сервисной операции</figcaption>
@@ -84,7 +78,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/service-operation-finish.png')}
+    src={useBaseUrl('/img/complete-operation-agent.png')}
     alt="Завершение сервисной операции"
   />
   <figcaption>Завершение сервисной операции</figcaption>

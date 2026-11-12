@@ -18,10 +18,10 @@ import Admonition from '@theme/Admonition';
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/Connect-VIN-list-vmp.jpg')}
+    src={useBaseUrl('/img/vin-list.jpg')}
     alt="Список автомобилей, доступных для обслуживания"
   />
-  <figcaption>Список автомобилей, доступных для обслуживания</figcaption>
+  <figcaption>Список VIN автомобилей, доступных для обслуживания</figcaption>
 </figure>
 
 <!-- :::note
@@ -43,7 +43,7 @@ VIN — последовательность из 17 символов, указ�
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/Connect-VIN-list.png')}
+    src={useBaseUrl('/img/access-requested.jpg')}
     alt="Нажмите **Запросить доступ** для подключения к автомобилю"
   />
   <figcaption>Нажмите **Запросить доступ** для подключения к автомобилю</figcaption>
@@ -93,7 +93,7 @@ VIN — последовательность из 17 символов, указ�
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/Connection-Success.png')}
+    src={useBaseUrl('/img/vehicle-connected-vmp.png')}
     alt="Подключение успешно"
   />
   <figcaption>Подключение успешно</figcaption>
