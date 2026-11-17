@@ -21,7 +21,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/dast-download.png')}
+    src={useBaseUrl('/img/run-atom-dis.png')}
     alt="После установки приложения вы можете запустить АТОМ ДИС"
   />
   <figcaption>После установки приложения вы можете запустить АТОМ ДИС</figcaption>
