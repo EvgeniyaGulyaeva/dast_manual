@@ -86,7 +86,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <figure className="img-card">
   <img
-    src={useBaseUrl('/img/ecu-page-agent.png')}
+    src={useBaseUrl('/img/ecu-data.png')}
     alt="Страница блока управления"
   />
   <figcaption>Страница блока управления</figcaption>
